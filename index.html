@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MUNCH · Restaurante de un solo día, una sola mesa, una sola jefa de cocina. Apertura 09.05.2026.">
+<title>MUNCH · Apertura Hoy · 09.05.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --linen:        #FAF3E1;
+    --cotton:       #F5E7C6;
+    --tangerine:    #FF6D1F;
+    --tangerine-d:  #D9530E;
+    --black:        #222222;
+    --black-soft:   #3A3A3A;
+    --ink-soft:     #5A4F44;
+    --muted:        #8B8478;
+    --hairline:     rgba(34, 34, 34, 0.10);
+    --hairline-soft:rgba(34, 34, 34, 0.05);
+
+    --space-section: 96px;
+
+    --pill-shadow:    0 6px 16px rgba(34, 34, 34, 0.14), 0 2px 4px rgba(34, 34, 34, 0.08);
+    --pill-shadow-lg: 0 10px 24px rgba(34, 34, 34, 0.20), 0 3px 6px rgba(34, 34, 34, 0.10);
+    --card-shadow:    0 4px 18px rgba(34, 34, 34, 0.06);
+    --card-shadow-hv: 0 16px 36px rgba(34, 34, 34, 0.12);
+
+    --logo-shadow:
+      0 1px 0 rgba(34,34,34,0.10),
+      0 6px 14px rgba(34,34,34,0.08),
+      0 16px 32px rgba(34,34,34,0.10);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--linen);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.0' numOctaves='1' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+    color: var(--black);
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; position: relative; }
+
+  /* ── Focus rings ── */
+  *:focus { outline: none; }
+  *:focus-visible {
+    outline: 2.5px solid var(--tangerine);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* ── ILUSTRACIONES DECORATIVAS (mask-image) ─── */
+  .deco {
+    position: absolute;
+    pointer-events: none;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+            mask-position: center;
+    z-index: 0;
+  }
+  .deco-1 { -webkit-mask-image: url('Recurso%201.svg'); mask-image: url('Recurso%201.svg'); }
+  .deco-2 { -webkit-mask-image: url('Recurso%202.svg'); mask-image: url('Recurso%202.svg'); }
+  .deco-3 { -webkit-mask-image: url('Recurso%203.svg'); mask-image: url('Recurso%203.svg'); }
+
+  /* ── INFOBAR ─────────────── */
+  .infobar {
+    padding: 16px 0;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid var(--hairline-soft);
+  }
+  .infobar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .infobar-row .dot {
+    display: inline-block;
+    width: 7px; height: 7px;
+    background: var(--tangerine);
+    border-radius: 50%;
+    margin: 0 10px;
+    vertical-align: middle;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%      { opacity: 0.5; transform: scale(1.3); }
+  }
+
+  /* ── HERO ─────────────── */
+  .hero {
+    padding: 40px 0 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    min-height: 0;
+  }
+  /* Decos posicionadas absolutamente · no afectan el flujo */
+  .hero .deco-3 {
+    position: absolute !important;
+    width: 520px; height: 660px;
+    right: -120px; top: -20px;
+    background-color: var(--tangerine);
+    opacity: 0.12;
+    transform: rotate(8deg);
+  }
+  .hero .deco-1 {
+    position: absolute !important;
+    width: 440px; height: 540px;
+    left: -100px; bottom: -60px;
+    background-color: var(--tangerine);
+    opacity: 0.10;
+    transform: rotate(-12deg) scaleX(-1);
+  }
+  .hero .deco-2 {
+    position: absolute !important;
+    width: 240px; height: 320px;
+    left: 8%; top: -40px;
+    background-color: var(--black);
+    opacity: 0.05;
+    transform: rotate(-6deg);
+  }
+  .hero > .wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--cotton);
+    border-radius: 999px;
+    padding: 11px 22px;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 28px;
+    box-shadow: var(--pill-shadow);
+  }
+  .hero-tag .live {
+    width: 8px; height: 8px;
+    background: var(--tangerine);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+  }
+
+  /* ── LOGO MUNCH · Anton (condensed bold display) ── */
+  .logo-munch {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: clamp(120px, 30vw, 360px);
+    line-height: 0.85;
+    color: var(--tangerine);
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+    text-shadow: var(--logo-shadow);
+    text-transform: uppercase;
+  }
+
+  .hero-sub {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(26px, 4vw, 38px);
+    color: var(--black);
+    margin-top: 4px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    padding: 0 16px;
+  }
+
+  /* ── HERO META · limpia ── */
+  .hero-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .meta-line {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+  .meta-role {
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .meta-sep {
+    color: var(--tangerine);
+    font-weight: 700;
+  }
+  .meta-name {
+    color: var(--black);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+  .meta-name small {
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--tangerine);
+    letter-spacing: 0;
+    margin-left: 8px;
+    text-transform: none;
+  }
+
+  /* ── MARQUEE ─────────────── */
+  .marquee {
+    background: var(--tangerine);
+    color: var(--linen);
+    overflow: hidden;
+    padding: 22px 0;
+    margin: 56px 0 0;
+    box-shadow: 0 6px 18px rgba(255, 109, 31, 0.20);
+  }
+  .marquee-track {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: marquee 28s linear infinite;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .marquee:hover .marquee-track,
+  .pop-banner:hover .marquee-track {
+    animation-play-state: paused;
+  }
+  .marquee-item { padding: 0 28px; display: inline-flex; align-items: center; gap: 24px; }
+  .marquee-star { color: var(--black); font-size: 14px; }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* ── SECTION HEAD ─────────── */
+  .sec-head {
+    text-align: center;
+    margin: 0 0 48px;
+  }
+  .sec-num {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 14px;
+    color: var(--tangerine);
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+  }
+  .sec-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(28px, 5.2vw, 56px);
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    line-height: 1;
+  }
+  .sec-title .accent {
+    color: var(--tangerine);
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 1.05em;
+    transform: rotate(-3deg);
+    display: inline-block;
+    letter-spacing: 0;
+  }
+  .sec-title .thin { font-weight: 200; color: var(--black-soft); }
+
+  .section { padding: var(--space-section) 0 0; }
+
+  /* ── CATEGORÍAS ───────────── */
+  .cats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .cat {
+    background: var(--cotton);
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: none;
+    text-align: left;
+    font-family: inherit;
+    color: inherit;
+    padding: 0;
+  }
+  .cat:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow-hv);
+  }
+  .cat-img {
+    aspect-ratio: 4 / 3;
+    background: var(--linen);
+    overflow: hidden;
+    position: relative;
+  }
+  .cat-img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+  }
+  .cat:hover .cat-img img { transform: scale(1.06); }
+  .cat-arrow {
+    position: absolute;
+    bottom: 14px; right: 14px;
+    background: var(--linen);
+    color: var(--black);
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 14px;
+    box-shadow: var(--card-shadow);
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+  }
+  .cat:hover .cat-arrow {
+    background: var(--tangerine);
+    color: var(--linen);
+    transform: rotate(-12deg) scale(1.08);
+  }
+  .cat-name {
+    padding: 20px 18px 22px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.20em;
+    color: var(--black);
+    text-transform: uppercase;
+  }
+  .cat-count {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    color: var(--muted);
+    margin-top: 6px;
+    text-transform: uppercase;
+  }
+
+  /* ── WANTED ─────────────── */
+  .wanted {
+    padding: var(--space-section) 0 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .wanted .deco-2 {
+    width: 360px; height: 460px;
+    right: 4%; top: 50%;
+    transform: translateY(-50%) rotate(6deg);
+    background-color: var(--tangerine);
+    opacity: 0.07;
+  }
+  .wanted .deco-2.left {
+    right: auto; left: 4%;
+    transform: translateY(-50%) rotate(-8deg) scaleX(-1);
+    width: 280px; height: 360px;
+    opacity: 0.06;
+  }
+  .wanted > .wrap { position: relative; z-index: 1; }
+
+  .wanted-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.36em;
+    color: var(--tangerine);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .wanted h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(28px, 6vw, 64px);
+    line-height: 1.05;
+    color: var(--black);
+    max-width: 900px;
+    margin: 0 auto 30px;
+    letter-spacing: -0.025em;
+  }
+  .wanted h2 .light { font-weight: 200; color: var(--black-soft); }
+  .wanted h2 em {
+    font-style: normal;
+    color: var(--tangerine);
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 1.18em;
+    transform: rotate(-3deg);
+    display: inline-block;
+  }
+  .wanted p {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.75;
+    font-weight: 300;
+    color: var(--black-soft);
+  }
+  .wanted p + p { margin-top: 16px; }
+
+  .wanted-stamp {
+    display: inline-block;
+    margin-top: 42px;
+    padding: 13px 28px;
+    background: var(--tangerine);
+    border-radius: 999px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    color: var(--linen);
+    transform: rotate(-1.5deg);
+    box-shadow: 0 8px 20px rgba(255, 109, 31, 0.30);
+  }
+
+  /* ── POPULARES ─────────── */
+  .pop-banner {
+    background: var(--black);
+    color: var(--linen);
+    overflow: hidden;
+    padding: 14px 0;
+    margin-bottom: 40px;
+    border-radius: 999px;
+    box-shadow: var(--pill-shadow-lg);
+  }
+  .pop-banner .marquee-track {
+    animation-duration: 22s;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.32em;
+  }
+  .pop-banner .marquee-item { color: var(--linen); }
+  .pop-banner .marquee-star { color: var(--tangerine); }
+
+  .dishes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .dish {
+    background: var(--cotton);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    font-family: inherit;
+    color: inherit;
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+  .dish:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hv);
+  }
+  .dish-img {
+    aspect-ratio: 16 / 11;
+    background: var(--linen);
+    position: relative;
+    overflow: hidden;
+  }
+  .dish-img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s;
+  }
+  .dish:hover .dish-img img { transform: scale(1.05); }
+  .dish-img .ribbon {
+    position: absolute;
+    top: 14px; left: 14px;
+    background: var(--tangerine);
+    color: var(--linen);
+    padding: 7px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(255, 109, 31, 0.35);
+    z-index: 2;
+  }
+  .dish-body { padding: 24px 26px 26px; }
+  .dish-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.15;
+    color: var(--black);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+  .dish-desc {
+    font-size: 13.5px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: var(--black-soft);
+    margin-bottom: 20px;
+  }
+  .dish-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px dashed var(--hairline);
+    gap: 12px;
+  }
+  .dish-meta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    color: var(--muted);
+    text-transform: uppercase;
+    flex: 1;
+  }
+  .dish-meta strong {
+    display: block;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--black);
+    letter-spacing: 0;
+    margin-top: 4px;
+    text-transform: none;
+  }
+  .dish-cta {
+    background: var(--black);
+    color: var(--linen);
+    padding: 11px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    box-shadow: var(--pill-shadow);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.25s, transform 0.15s;
+    pointer-events: none;
+  }
+  .dish:hover .dish-cta {
+    background: var(--tangerine);
+    transform: scale(1.04);
+  }
+  .dish-cta .arrow {
+    transition: transform 0.3s;
+  }
+  .dish:hover .dish-cta .arrow {
+    transform: translateX(3px);
+  }
+
+  /* ── REVIEWS ───────────── */
+  .reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+  .review {
+    background: var(--cotton);
+    padding: 34px 32px 30px;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .review:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--card-shadow-hv);
+  }
+  .review-stars {
+    color: var(--tangerine);
+    font-size: 18px;
+    letter-spacing: 0.24em;
+    margin-bottom: 14px;
+  }
+  .review-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 14px;
+    letter-spacing: -0.005em;
+  }
+  .review-body {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--black-soft);
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-style: italic;
+  }
+  .review-author {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    color: var(--tangerine);
+    font-weight: 600;
+  }
+
+  /* ── DARK PANEL ─────────── */
+  .dark-panel {
+    background: var(--black);
+    color: var(--linen);
+    border-radius: 28px;
+    padding: 96px 56px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 24px 56px rgba(34, 34, 34, 0.30);
+  }
+  .dark-panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 18% 80%, rgba(255, 109, 31, 0.18), transparent 50%),
+      radial-gradient(circle at 82% 22%, rgba(245, 231, 198, 0.06), transparent 50%);
+    pointer-events: none;
+  }
+  .dark-panel .deco-1 {
+    width: 360px; height: 460px;
+    right: -40px; top: 50%;
+    transform: translateY(-50%) rotate(-6deg);
+    background-color: var(--cotton);
+    opacity: 0.10;
+  }
+  .dark-content { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; text-align: center; }
+
+  .dark-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.36em;
+    color: var(--tangerine);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .dark-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(28px, 5.5vw, 60px);
+    line-height: 1.05;
+    margin-bottom: 30px;
+    letter-spacing: -0.025em;
+  }
+  .dark-title .light { font-weight: 200; color: rgba(250, 243, 225, 0.55); }
+  .dark-title .glow  { color: var(--tangerine); }
+
+  .dark-body {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(250, 243, 225, 0.82);
+    margin-bottom: 42px;
+  }
+
+  .clue {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: var(--tangerine);
+    margin-bottom: 22px;
+    transform: rotate(-1.5deg);
+    display: inline-block;
+    font-weight: 600;
+    padding: 0 12px;
+  }
+
+  .pw-wrap {
+    display: inline-flex;
+    background: var(--linen);
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.30);
+    transition: box-shadow 0.4s;
+    max-width: 100%;
+  }
+  .pw-wrap.success {
+    box-shadow: 0 0 0 6px rgba(255, 109, 31, 0.45), 0 12px 30px rgba(0,0,0,0.30);
+    animation: success-pulse 0.6s ease;
+  }
+  @keyframes success-pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.02); }
+  }
+  .pw-wrap:focus-within {
+    box-shadow: 0 0 0 5px rgba(255, 109, 31, 0.30), 0 12px 30px rgba(0,0,0,0.30);
+  }
+  .pw-wrap input {
+    border: none;
+    padding: 16px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.18em;
+    color: var(--black);
+    outline: none;
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    min-width: 0;
+  }
+  .pw-wrap input::placeholder { color: var(--muted); letter-spacing: 0.28em; font-weight: 400; }
+  .pw-wrap input.error { animation: shake 0.4s ease; }
+  .pw-btn {
+    background: var(--tangerine);
+    color: var(--linen);
+    border: none;
+    padding: 0 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 11.5px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .pw-btn:hover { background: var(--tangerine-d); }
+  .pw-error {
+    margin-top: 16px;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: var(--tangerine);
+    display: none;
+    font-weight: 600;
+    padding: 0 16px;
+  }
+  .pw-error.visible { display: block; animation: fadeIn 0.3s; }
+
+  /* ── MODALES ────────────── */
+  .overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(34, 34, 34, 0.84);
+    backdrop-filter: blur(6px);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 0.4s ease both;
+  }
+  .overlay.visible { display: flex; }
+
+  .modal {
+    background: var(--linen);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.0' numOctaves='1' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    max-width: 620px;
+    width: 100%;
+    max-height: 88vh;
+    overflow-y: auto;
+    padding: 56px 56px 52px;
+    position: relative;
+    border-radius: 22px;
+    animation: scaleIn 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.2) both;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+    /* scrollbar invisible */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .modal::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+  .modal-recipe { max-width: 760px; }
+  .modal-desc { max-width: 560px; }
+
+  .modal-close {
+    position: absolute;
+    top: 22px; right: 22px;
+    background: var(--cotton);
+    border: none;
+    border-radius: 999px;
+    width: 38px; height: 38px;
+    cursor: pointer;
+    color: var(--black);
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    box-shadow: var(--pill-shadow);
+    z-index: 3;
+  }
+  .modal-close:hover {
+    background: var(--tangerine);
+    color: var(--linen);
+    transform: rotate(90deg);
+  }
+
+  .modal-stamp {
+    display: inline-block;
+    background: var(--tangerine);
+    color: var(--linen);
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 14px rgba(255, 109, 31, 0.30);
+  }
+  .modal-stamp.dark {
+    background: var(--black);
+    color: var(--linen);
+    box-shadow: var(--pill-shadow);
+  }
+  .modal-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    color: var(--black);
+    margin-bottom: 8px;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    text-transform: uppercase;
+  }
+  .modal-meta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.32em;
+    color: var(--tangerine);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .modal-intro {
+    font-size: 15px;
+    color: var(--black-soft);
+    line-height: 1.7;
+    font-weight: 300;
+    margin-bottom: 26px;
+  }
+  .modal-body {
+    font-size: 16px;
+    line-height: 1.85;
+    font-weight: 400;
+    color: var(--black);
+  }
+  .modal-body p { margin-bottom: 18px; }
+  .modal-body p strong { color: var(--tangerine); font-weight: 800; }
+
+  /* ── DESCRIPCIÓN MODAL (categorías) ── */
+  .desc-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 26px;
+    background: var(--cotton);
+    box-shadow: var(--card-shadow);
+  }
+  .desc-img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .desc-text {
+    font-size: 15.5px;
+    line-height: 1.75;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 28px;
+  }
+  .desc-text p { margin-bottom: 14px; }
+  .desc-text p:last-child { margin-bottom: 0; }
+  .desc-text strong { color: var(--tangerine); font-weight: 800; }
+  .desc-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: var(--black);
+    color: var(--linen);
+    border: none;
+    padding: 16px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.15s;
+    box-shadow: var(--pill-shadow);
+  }
+  .desc-cta:hover {
+    background: var(--tangerine);
+    transform: translateY(-2px);
+  }
+  .desc-cta .arrow { transition: transform 0.3s; }
+  .desc-cta:hover .arrow { transform: translateX(4px); }
+
+  /* ── TOGGLE FAMILIA / AGUS ─── */
+  .recipe-toggle {
+    display: flex;
+    background: var(--cotton);
+    border-radius: 999px;
+    padding: 4px;
+    margin-bottom: 28px;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    width: fit-content;
+  }
+  .recipe-toggle::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: calc(50% - 4px);
+    background: var(--tangerine);
+    border-radius: 999px;
+    transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.2);
+    box-shadow: 0 6px 14px rgba(255, 109, 31, 0.35);
+    z-index: 0;
+  }
+  .modal[data-mode="agus"] .recipe-toggle::before {
+    transform: translateX(100%);
+  }
+  .recipe-toggle button {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    padding: 11px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--black-soft);
+    cursor: pointer;
+    border-radius: 999px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    justify-content: center;
+    min-width: 130px;
+  }
+  .recipe-toggle button .small {
+    font-weight: 400;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    opacity: 0.75;
+  }
+  .recipe-toggle button.active { color: var(--linen); }
+  .recipe-toggle button.active .small { opacity: 0.95; }
+  .recipe-toggle button:not(.active):hover { color: var(--black); }
+
+  /* ── RECETAS ──────── */
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 32px;
+    margin-bottom: 22px;
+  }
+  .recipe-section h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    color: var(--tangerine);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .recipe-section ul, .recipe-section ol { list-style: none; }
+  .recipe-section li {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--black);
+    font-weight: 400;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 7px;
+  }
+  .recipe-section ul li::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    width: 6px; height: 1.5px;
+    background: var(--tangerine);
+  }
+  .recipe-section ol { counter-reset: step; }
+  .recipe-section ol li {
+    counter-increment: step;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .recipe-section ol li::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--tangerine);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    top: 4px;
+  }
+
+  .rmode { animation: fadeIn 0.35s ease; }
+  .rmode.hidden { display: none; }
+
+  .recipe-note {
+    margin-top: 6px;
+    padding: 18px 22px;
+    background: var(--cotton);
+    border-radius: 14px;
+    font-family: 'Caveat', cursive;
+    font-size: 19px;
+    color: var(--black);
+    line-height: 1.45;
+    font-weight: 500;
+  }
+  .recipe-note .pin {
+    color: var(--tangerine);
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+    letter-spacing: 0.32em;
+  }
+  .recipe-note.agus-only,
+  .recipe-note.familia-only { display: none; }
+  .modal[data-mode="agus"] .recipe-note.agus-only,
+  .modal[data-mode="familia"] .recipe-note.familia-only { display: block; animation: fadeIn 0.35s ease; }
+
+  /* ── CARTA ───── */
+  .carta-firma { margin-top: 36px; text-align: right; }
+  .carta-firma .from {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .carta-firma .name {
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--tangerine);
+    line-height: 1;
+    margin-top: 4px;
+  }
+
+  /* ── FOOTER ─────── */
+  .footer {
+    margin-top: var(--space-section);
+    padding: 72px 0 60px;
+    background: var(--cotton);
+    position: relative;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  .footer-logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 84px;
+    color: var(--tangerine);
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+    text-shadow: 0 4px 12px rgba(34, 34, 34, 0.10);
+    text-transform: uppercase;
+  }
+  .footer-block h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    color: var(--tangerine);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .footer-block p, .footer-block a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+    line-height: 1.75;
+    text-decoration: none;
+    display: block;
+    transition: color 0.2s;
+  }
+  .footer-block a:hover { color: var(--tangerine); }
+  .footer-block .tagline {
+    font-weight: 300;
+    margin-top: 16px;
+    max-width: 250px;
+    line-height: 1.65;
+    color: var(--black-soft);
+  }
+  .footer-bottom {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--hairline);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.26em;
+    color: var(--black-soft);
+    text-transform: uppercase;
+  }
+  .footer-bottom .heart {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: var(--tangerine);
+    text-transform: none;
+    letter-spacing: 0;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  /* ── ANIMATIONS ───────── */
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.94); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+    .marquee-track { animation: none !important; }
+  }
+
+  /* ════════════════════════════════════════ */
+  /* ── RESPONSIVE ──────────── */
+  /* ════════════════════════════════════════ */
+  @media (max-width: 880px) {
+    :root { --space-section: 72px; }
+    .wrap { padding: 0 20px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .footer-logo { grid-column: span 2; font-size: 72px; }
+    .dark-panel { padding: 64px 28px; border-radius: 18px; }
+    .reviews { grid-template-columns: 1fr; }
+    .recipe-grid { grid-template-columns: 1fr; gap: 24px; }
+    .modal-title { font-size: 30px; }
+    .hero { padding: 28px 0 40px; }
+    .hero .deco { display: none; }
+    .wanted .deco-2 { width: 240px; height: 320px; opacity: 0.05; }
+  }
+
+  @media (max-width: 600px) {
+    :root { --space-section: 64px; }
+    .wrap { padding: 0 18px; }
+    .infobar { padding: 12px 0; font-size: 9px; letter-spacing: 0.12em; }
+    .infobar-row { gap: 6px; justify-content: center; text-align: center; }
+    .infobar-row .dot { margin: 0 6px; }
+
+    /* Hero ↔ marquee: 32 + 32 = 64px (= space-section) */
+    .hero { padding: 28px 0 32px; }
+    .hero-tag { padding: 9px 16px; font-size: 9px; letter-spacing: 0.22em; margin-bottom: 18px; }
+    .logo-munch { margin-bottom: 8px; }
+    .hero-sub { margin-bottom: 22px; font-size: 22px; }
+    .hero-meta { font-size: 10.5px; gap: 6px; }
+    .meta-line { gap: 10px; }
+    .meta-name small { display: block; margin-left: 0; margin-top: 2px; font-size: 14px; }
+    .hero .deco { display: none !important; }
+
+    .marquee { padding: 16px 0; margin-top: 32px; }
+    .marquee-track { font-size: 13px; letter-spacing: 0.14em; }
+    .marquee-item { padding: 0 18px; gap: 16px; }
+
+    /* Sección · padding-top consistente = espacio entre secciones */
+    .section { padding-top: var(--space-section); }
+    .wanted { padding: var(--space-section) 0 0; }
+
+    .wanted-eyebrow { font-size: 10px; letter-spacing: 0.28em; margin-bottom: 14px; }
+    .wanted h2 { font-size: 30px; line-height: 1.1; margin-bottom: 20px; }
+    .wanted p { font-size: 15px; }
+    .wanted-stamp { font-size: 10px; padding: 11px 22px; margin-top: 28px; }
+    .wanted .deco-2 { display: none; }
+
+    .sec-head { margin: 0 0 26px; }
+    .sec-num { font-size: 12px; }
+    .sec-title { font-size: 28px; }
+
+    .cats { grid-template-columns: 1fr; gap: 14px; max-width: 380px; }
+    .cat-name { padding: 16px 12px 18px; font-size: 12px; letter-spacing: 0.16em; }
+    .cat-count { font-size: 9.5px; letter-spacing: 0.18em; }
+    .cat-arrow { width: 32px; height: 32px; font-size: 12px; bottom: 10px; right: 10px; }
+
+    .pop-banner { padding: 11px 0; margin-bottom: 28px; }
+    .pop-banner .marquee-track { font-size: 11px; letter-spacing: 0.22em; }
+
+    .dishes { grid-template-columns: 1fr; gap: 18px; }
+    .dish { border-radius: 16px; }
+    .dish-body { padding: 20px 22px 22px; }
+    .dish-name { font-size: 19px; }
+    .dish-desc { font-size: 13px; margin-bottom: 16px; }
+    .dish-foot { flex-direction: column; align-items: stretch; gap: 14px; }
+    .dish-meta { text-align: center; }
+    .dish-cta { justify-content: center; padding: 12px 16px; }
+
+    .review { padding: 26px 24px 22px; border-radius: 14px; }
+    .review-title { font-size: 15px; }
+    .review-body { font-size: 13.5px; }
+
+    .dark-panel { padding: 56px 22px; border-radius: 16px; }
+    .dark-panel .deco-1 { width: 220px; height: 280px; opacity: 0.08; right: -30px; }
+    .dark-eyebrow { font-size: 10px; letter-spacing: 0.28em; margin-bottom: 16px; }
+    .dark-title { font-size: 28px; margin-bottom: 22px; }
+    .dark-body { font-size: 15px; margin-bottom: 30px; }
+    .clue { font-size: 24px; margin-bottom: 18px; }
+
+    .pw-wrap { display: flex; width: 100%; max-width: 320px; }
+    .pw-wrap input { width: auto; flex: 1; padding: 14px 16px; font-size: 14px; letter-spacing: 0.12em; }
+    .pw-btn { padding: 0 18px; font-size: 10.5px; letter-spacing: 0.20em; }
+
+    .overlay { padding: 12px; }
+    .modal { padding: 40px 24px 36px; border-radius: 18px; max-height: 92vh; }
+    .modal-recipe { padding: 40px 22px 36px; }
+    .modal-close { top: 14px; right: 14px; width: 34px; height: 34px; }
+    .modal-stamp { font-size: 9px; padding: 7px 14px; letter-spacing: 0.22em; margin-bottom: 18px; }
+    .modal-title { font-size: 24px; }
+    .modal-meta { font-size: 10px; letter-spacing: 0.24em; margin-bottom: 18px; }
+    .modal-intro { font-size: 14px; margin-bottom: 22px; }
+    .modal-body { font-size: 15px; line-height: 1.75; }
+    .modal-body p { margin-bottom: 14px; }
+    .desc-text { font-size: 14.5px; }
+
+    .recipe-toggle { width: 100%; padding: 4px; margin-bottom: 22px; }
+    .recipe-toggle button {
+      flex: 1; padding: 10px 8px; font-size: 10px; letter-spacing: 0.14em;
+      flex-direction: column; gap: 2px; min-width: 0;
+    }
+    .recipe-toggle button .small { font-size: 8.5px; letter-spacing: 0.10em; }
+
+    .recipe-grid { gap: 22px; margin-bottom: 18px; }
+    .recipe-section h4 { font-size: 10.5px; letter-spacing: 0.28em; }
+    .recipe-section li { font-size: 13.5px; }
+    .recipe-note { padding: 14px 18px; font-size: 17px; }
+
+    .carta-firma .name { font-size: 44px; }
+
+    .footer { padding: 48px 0 40px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 26px; }
+    .footer-logo { font-size: 60px; grid-column: span 2; }
+    .footer-block h4 { font-size: 10px; letter-spacing: 0.24em; }
+    .footer-block p, .footer-block a { font-size: 13px; }
+    .footer-bottom { font-size: 9.5px; letter-spacing: 0.18em; margin-top: 36px; }
+  }
+
+  @media (max-width: 380px) {
+    .infobar-row { flex-direction: column; gap: 4px; }
+    .logo-munch { font-size: 110px; }
+    .hero-sub { font-size: 20px; }
+    .marquee-track { font-size: 11px; letter-spacing: 0.10em; }
+    .marquee-item { padding: 0 14px; }
+    .wanted h2 { font-size: 26px; }
+    .sec-title { font-size: 24px; }
+    .dish-name { font-size: 17px; }
+    .dark-title { font-size: 24px; }
+    .modal-title { font-size: 22px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-logo { grid-column: 1; font-size: 56px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── INFOBAR ─────────────── -->
+<div class="infobar">
+  <div class="wrap infobar-row">
+    <div>09 · MAYO · 2026 <span class="dot" aria-hidden="true"></span> APERTURA HOY</div>
+    <div>HORARIO HOY · 13:00 — 23:00</div>
+    <div>BARCELONA · A 10.612 KM DE STGO</div>
+  </div>
+</div>
+
+<!-- ── HERO ─────────────── -->
+<header class="hero">
+  <div class="deco deco-3" aria-hidden="true"></div>
+  <div class="deco deco-1" aria-hidden="true"></div>
+  <div class="deco deco-2" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="hero-tag"><span class="live" aria-hidden="true"></span> EN VIVO · OPENING NIGHT</div>
+
+    <h1 class="logo-munch" aria-label="MUNCH">MUNCH</h1>
+    <p class="hero-sub">restaurante · solo por hoy · solo para ti</p>
+
+    <div class="hero-meta">
+      <div class="meta-line">
+        <span class="meta-role">Jefe de cocina</span>
+        <span class="meta-sep">/</span>
+        <span class="meta-name">Agus</span>
+      </div>
+      <div class="meta-line">
+        <span class="meta-role">Chef internacional</span>
+        <span class="meta-sep">/</span>
+        <span class="meta-name">Mamá</span>
+      </div>
+      <div class="meta-line">
+        <span class="meta-role">Mesas reservadas</span>
+        <span class="meta-sep">/</span>
+        <span class="meta-name">Dos <small>(una familiar x facetime)</small></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── MARQUEE ────────────── -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">ABIERTO HOY <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">FELIZ DÍA MAMÁ <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">ABIERTO HOY <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">SOLO HOY <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">SE BUSCA CHEF <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">ABIERTO HOY <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">FELIZ DÍA MAMÁ <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">ABIERTO HOY <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">SOLO HOY <span class="marquee-star">✶</span></span>
+    <span class="marquee-item">SE BUSCA CHEF <span class="marquee-star">✶</span></span>
+  </div>
+</div>
+
+<!-- ── 01 · CATEGORÍAS ───────────── -->
+<section class="section wrap" aria-labelledby="cats-title">
+  <div class="sec-head">
+    <div class="sec-num">01</div>
+    <h2 class="sec-title" id="cats-title"><span class="thin">Categorías</span> <span class="accent">de la casa</span></h2>
+  </div>
+
+  <div class="cats">
+    <button class="cat" type="button" onclick="openOverlay('descPan')" aria-label="Ver descripción de Pan de Ajo">
+      <div class="cat-img">
+        <img src="pan%20de%20ajo.png" alt="Pan de ajo" loading="lazy">
+        <span class="cat-arrow" aria-hidden="true">→</span>
+      </div>
+      <div class="cat-name">Entradas<span class="cat-count">Pan de Ajo</span></div>
+    </button>
+    <button class="cat" type="button" onclick="openOverlay('descRisotto')" aria-label="Ver descripción de Risotto Boscaiola">
+      <div class="cat-img">
+        <img src="rissoto.png" alt="Risotto" loading="lazy">
+        <span class="cat-arrow" aria-hidden="true">→</span>
+      </div>
+      <div class="cat-name">Platos<span class="cat-count">Risotto Boscaiola</span></div>
+    </button>
+  </div>
+</section>
+
+<!-- ── WANTED ────── -->
+<section class="wanted" aria-labelledby="wanted-title">
+  <div class="deco deco-2" aria-hidden="true"></div>
+  <div class="deco deco-2 left" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <p class="wanted-eyebrow">★ Se Busca · We are hiring · Solo Hoy ★</p>
+    <h2 id="wanted-title"><span class="light">Hoy abre</span> MUNCH. <span class="light">Pero</span> <em>falta una persona</em> <span class="light">en cocina.</span></h2>
+    <p>Como en The Bear: no se sirve un plato sin que la persona indicada lo pruebe primero. Y la cocina de hoy no se abre sin la jefa de cocina — la única que sabe si esto está listo o si me falta sal.</p>
+    <p>Por eso hoy no necesito clientes. Necesito a la chef. Tú.</p>
+    <div class="wanted-stamp" role="img" aria-label="Contrato por un día">CONTRATO POR UN DÍA · 09.05.2026</div>
+  </div>
+</section>
+
+<!-- ── 02 · LA CARTA ──────────── -->
+<section class="section wrap" aria-labelledby="carta-title">
+  <div class="sec-head">
+    <div class="sec-num">02</div>
+    <h2 class="sec-title" id="carta-title"><span class="thin">La carta</span> <span class="accent">de hoy</span></h2>
+  </div>
+
+  <div class="pop-banner" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">★ TOP DE HOY ★</span>
+      <span class="marquee-item">★ MUY RECOMENDADO ★</span>
+      <span class="marquee-item">★ EL FAVORITO DE LA CASA ★</span>
+      <span class="marquee-item">★ TOP DE HOY ★</span>
+      <span class="marquee-item">★ MUY RECOMENDADO ★</span>
+      <span class="marquee-item">★ EL FAVORITO DE LA CASA ★</span>
+    </div>
+  </div>
+
+  <div class="dishes">
+    <button class="dish" type="button" onclick="openOverlay('recipePan')" aria-label="Pan de Ajo: ver receta">
+      <div class="dish-img">
+        <span class="ribbon">★ Entrada</span>
+        <img src="pan%20de%20ajo.png" alt="Pan de ajo recién horneado" loading="lazy">
+      </div>
+      <div class="dish-body">
+        <div class="dish-name">Pan de Ajo</div>
+        <div class="dish-desc">Mantequilla, ajo machacado y perejil sobre baguette al horno. Servido caliente, recién salido.</div>
+        <div class="dish-foot">
+          <div class="dish-meta">Tiempo · 15 min<strong>de los rápidos</strong></div>
+          <span class="dish-cta">Ver receta <span class="arrow">→</span></span>
+        </div>
+      </div>
+    </button>
+
+    <button class="dish" type="button" onclick="openOverlay('recipeRisotto')" aria-label="Risotto Boscaiola: ver receta">
+      <div class="dish-img">
+        <span class="ribbon">★ Plato de fondo</span>
+        <img src="rissoto.png" alt="Risotto cremoso de champiñón" loading="lazy">
+      </div>
+      <div class="dish-body">
+        <div class="dish-name">Risotto Boscaiola</div>
+        <div class="dish-desc">Arroz arborio cremoso con champiñón salteado, lomo en tiras y lluvia de parmesano.</div>
+        <div class="dish-foot">
+          <div class="dish-meta">Tiempo · 30 min<strong>el de la casa</strong></div>
+          <span class="dish-cta">Ver receta <span class="arrow">→</span></span>
+        </div>
+      </div>
+    </button>
+  </div>
+</section>
+
+<!-- ── 03 · REVIEWS ────────── -->
+<section class="section wrap" aria-labelledby="reviews-title">
+  <div class="sec-head">
+    <div class="sec-num">03</div>
+    <h2 class="sec-title" id="reviews-title"><span class="thin">El equipo</span> <span class="accent">opina</span></h2>
+  </div>
+
+  <div class="reviews">
+    <article class="review">
+      <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+      <h3 class="review-title">Volvería todos los días</h3>
+      <blockquote class="review-body">"El servicio es lento porque el chef habla mucho durante la comida, pero todo lo que sirve termina en el plato vacío. Mejor restaurante de Barcelona, fácil."</blockquote>
+      <div class="review-author">— el papá</div>
+    </article>
+    <article class="review">
+      <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+      <h3 class="review-title">Imprescindible</h3>
+      <blockquote class="review-body">"La carta cambia según quién pasa por la cocina ese día. Hoy es para la jefa. Un detalle, un poco cursi, mucho corazón. Diez de diez."</blockquote>
+      <div class="review-author">— la familia</div>
+    </article>
+  </div>
+</section>
+
+<!-- ── DARK PANEL ────── -->
+<section class="section wrap" aria-labelledby="reservada-title">
+  <div class="dark-panel">
+    <div class="deco deco-1" aria-hidden="true"></div>
+    <div class="dark-content">
+      <p class="dark-eyebrow">▼ Reservado para ti ▼</p>
+      <h2 class="dark-title" id="reservada-title"><span class="light">Hay una mesa adentro</span><br>con tu <span class="glow">nombre</span>.</h2>
+      <div class="dark-body">
+        <p>Y una carta que solo se abre con una contraseña. Una que tú sabes y nadie más. La que uso cuando no quiero llamarte por tu nombre.</p>
+      </div>
+
+      <p class="clue">la contraseña es como te digo siempre…</p>
+
+      <form class="pw-wrap" id="pwForm" onsubmit="event.preventDefault(); checkPassword();">
+        <label for="passwordInput" style="position:absolute;left:-9999px;">Contraseña</label>
+        <input type="text" id="passwordInput" placeholder="escríbelo aquí" autocomplete="off" autocapitalize="none" spellcheck="false">
+        <button type="submit" class="pw-btn">Entrar</button>
+      </form>
+      <div class="pw-error" id="errorMsg" role="alert">esa no es… piensa en cómo te llamo siempre</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-block">
+        <div class="footer-logo">MUNCH</div>
+        <p class="tagline">Un restaurante de un solo día, una sola mesa y una sola jefa de cocina.</p>
+      </div>
+      <div class="footer-block">
+        <h4>Visítanos</h4>
+        <p>Cocina del hijo lejano</p>
+        <p>Barcelona · 08018</p>
+        <p>(via FaceTime)</p>
+      </div>
+      <div class="footer-block">
+        <h4>Horario</h4>
+        <p>Hoy · 13:00 — 23:00</p>
+        <p>Mañana · cerrado</p>
+        <p>(quizás vuelva)</p>
+      </div>
+      <div class="footer-block">
+        <h4>Contacto</h4>
+        <a href="tel:+34">+34 · solo mamá</a>
+        <p>cualquier hora del día</p>
+        <p>siempre contesto</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="heart">con todo mi cariño, Agus</span>
+      MUNCH · Barcelona · Mayo 2026 · Apertura única
+    </div>
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ── DESCRIPCIÓN · PAN DE AJO (categoría) ── -->
+<!-- ════════════════════════════════════════════ -->
+<div class="overlay" id="descPan" role="dialog" aria-modal="true" aria-labelledby="descPan-title" onclick="closeOverlayBg(event, 'descPan')">
+  <div class="modal modal-desc">
+    <button class="modal-close" type="button" onclick="closeOverlay('descPan')" aria-label="Cerrar">✕</button>
+    <div class="modal-stamp">Entrada · 01</div>
+    <h2 class="modal-title" id="descPan-title">Pan de Ajo</h2>
+    <div class="modal-meta">15 min · Para abrir la noche</div>
+
+    <div class="desc-img">
+      <img src="pan%20de%20ajo.png" alt="Pan de ajo recién horneado" loading="lazy">
+    </div>
+
+    <div class="desc-text">
+      <p>La entrada que abre la noche. Cinco ingredientes de despensa — pan, mantequilla, ajo, perejil, sal — y treinta años practicándolo en casa. Hoy sale del horno cuando llega la jefa.</p>
+      <p>El olor del ajo derritiéndose en mantequilla es la señal de que la cocina está lista. No tiene secreto, pero pide tiempo: se hornea envuelto en aluminio hasta que la mantequilla burbujea, y se abre los últimos minutos para que el pan dore.</p>
+      <p>Se come con las manos. Se comparte. Y nunca alcanza.</p>
+    </div>
+
+    <button class="desc-cta" type="button" onclick="switchOverlay('descPan','recipePan')">
+      Ver receta completa <span class="arrow">→</span>
+    </button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ── DESCRIPCIÓN · RISOTTO (categoría) ──── -->
+<!-- ════════════════════════════════════════════ -->
+<div class="overlay" id="descRisotto" role="dialog" aria-modal="true" aria-labelledby="descRisotto-title" onclick="closeOverlayBg(event, 'descRisotto')">
+  <div class="modal modal-desc">
+    <button class="modal-close" type="button" onclick="closeOverlay('descRisotto')" aria-label="Cerrar">✕</button>
+    <div class="modal-stamp">Plato · 02</div>
+    <h2 class="modal-title" id="descRisotto-title">Risotto Boscaiola</h2>
+    <div class="modal-meta">30 min · El plato de fondo de la casa</div>
+
+    <div class="desc-img">
+      <img src="rissoto.png" alt="Risotto cremoso de champiñón" loading="lazy">
+    </div>
+
+    <div class="desc-text">
+      <p>El plato de fondo de la casa. Arroz arborio, champiñones que se doran lento en mantequilla, lomo cortado en tiras finas, y un cucharón de caldo a la vez hasta que el arroz cede. Termina con una nube de parmesano y una pizca de paciencia.</p>
+      <p>Se llama <strong>Boscaiola</strong> por los hongos del bosque. Acá es la versión simple, la que aprendí solo a fuerza de ensayo y error. Lleva tiempo y revolver con calma — pero el resultado vale cada minuto.</p>
+      <p>Adentro tiene la receta para tres comensales y para una sola persona con sobras para la semana. Tú eliges.</p>
+    </div>
+
+    <button class="desc-cta" type="button" onclick="switchOverlay('descRisotto','recipeRisotto')">
+      Ver receta completa <span class="arrow">→</span>
+    </button>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ── RECETA · PAN DE AJO (carta) ─────────── -->
+<!-- ════════════════════════════════════════════ -->
+<div class="overlay" id="recipePan" role="dialog" aria-modal="true" aria-labelledby="recipePan-title" onclick="closeOverlayBg(event, 'recipePan')">
+  <div class="modal modal-recipe" data-mode="familia">
+    <button class="modal-close" type="button" onclick="closeOverlay('recipePan')" aria-label="Cerrar">✕</button>
+    <div class="modal-stamp">Receta · 01</div>
+    <h2 class="modal-title" id="recipePan-title">Pan de Ajo</h2>
+
+    <div class="recipe-toggle" role="tablist" aria-label="Tamaño de la receta">
+      <button class="active" type="button" data-mode="familia" onclick="setRecipeMode(this,'familia')" role="tab" aria-selected="true">Familia<span class="small">3 comensales</span></button>
+      <button type="button" data-mode="agus" onclick="setRecipeMode(this,'agus')" role="tab" aria-selected="false">Agus<span class="small">4 porciones</span></button>
+    </div>
+
+    <p class="modal-intro">Lo más simple del mundo: pan, mantequilla, ajo. Pero hecho con calma, en el horno, hasta que la mantequilla burbujee.</p>
+
+    <div class="recipe-grid">
+      <div class="recipe-section">
+        <h4>Ingredientes</h4>
+        <ul class="rmode rmode-familia">
+          <li>1 baguette</li>
+          <li>70 g de mantequilla blanda</li>
+          <li>3 dientes de ajo</li>
+          <li>Perejil fresco picado</li>
+          <li>Sal y pimienta</li>
+          <li>Queso rallado (opcional)</li>
+        </ul>
+        <ul class="rmode rmode-agus hidden">
+          <li>1 baguette grande (cortar en 4 porciones)</li>
+          <li>90 g de mantequilla blanda</li>
+          <li>5 dientes de ajo</li>
+          <li>Perejil fresco picado</li>
+          <li>Sal y pimienta</li>
+          <li>Queso rallado (opcional)</li>
+        </ul>
+      </div>
+      <div class="recipe-section">
+        <h4>Preparación</h4>
+        <ol>
+          <li>Precalentar el horno a 180 °C.</li>
+          <li>Machacar el ajo y mezclarlo con la mantequilla blanda, perejil picado, sal y pimienta.</li>
+          <li>Cortar el pan en rebanadas sin llegar al fondo (estilo acordeón).</li>
+          <li>Rellenar cada corte con la mantequilla de ajo.</li>
+          <li>Envolver en papel aluminio y hornear 12 minutos.</li>
+          <li>Abrir el aluminio los últimos 4 minutos para que dore.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="recipe-note familia-only">
+      <span class="pin">★ Truco de la chef</span>
+      Si lo aplastas un poco antes de cerrar el aluminio, la mantequilla se reparte hasta el último corte. Tú me lo enseñaste.
+    </div>
+    <div class="recipe-note agus-only">
+      <span class="pin">★ Para los días siguientes</span>
+      Envuelve dos porciones sin hornear, con su mantequilla, en aluminio. Al freezer. Sale igual de rico calentando 15 min directo desde frío.
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ── RECETA · RISOTTO (carta) ─────────────── -->
+<!-- ════════════════════════════════════════════ -->
+<div class="overlay" id="recipeRisotto" role="dialog" aria-modal="true" aria-labelledby="recipeRisotto-title" onclick="closeOverlayBg(event, 'recipeRisotto')">
+  <div class="modal modal-recipe" data-mode="familia">
+    <button class="modal-close" type="button" onclick="closeOverlay('recipeRisotto')" aria-label="Cerrar">✕</button>
+    <div class="modal-stamp">Receta · 02</div>
+    <h2 class="modal-title" id="recipeRisotto-title">Risotto Boscaiola</h2>
+
+    <div class="recipe-toggle" role="tablist" aria-label="Tamaño de la receta">
+      <button class="active" type="button" data-mode="familia" onclick="setRecipeMode(this,'familia')" role="tab" aria-selected="true">Familia<span class="small">3 comensales</span></button>
+      <button type="button" data-mode="agus" onclick="setRecipeMode(this,'agus')" role="tab" aria-selected="false">Agus<span class="small">4 porciones</span></button>
+    </div>
+
+    <p class="modal-intro">Necesita paciencia y cariño. El arroz se va abriendo de a poco, un cucharón a la vez, hasta que llega al punto.</p>
+
+    <div class="recipe-grid">
+      <div class="recipe-section">
+        <h4>Ingredientes</h4>
+        <ul class="rmode rmode-familia">
+          <li>225 g de arroz arborio</li>
+          <li>190 g de champiñones</li>
+          <li>225 g de lomo o filete en tiras</li>
+          <li>1 cebolla mediana</li>
+          <li>2 dientes de ajo</li>
+          <li>110 ml de vino blanco seco</li>
+          <li>750 ml de caldo de carne caliente</li>
+          <li>45 g de parmesano rallado</li>
+          <li>25 g de mantequilla</li>
+          <li>Aceite de oliva, sal, pimienta</li>
+        </ul>
+        <ul class="rmode rmode-agus hidden">
+          <li>300 g de arroz arborio</li>
+          <li>250 g de champiñones</li>
+          <li>300 g de lomo o filete en tiras</li>
+          <li>1 cebolla mediana</li>
+          <li>3 dientes de ajo</li>
+          <li>150 ml de vino blanco seco</li>
+          <li>1 L de caldo de carne caliente</li>
+          <li>60 g de parmesano rallado</li>
+          <li>30 g de mantequilla</li>
+          <li>Aceite de oliva, sal, pimienta</li>
+        </ul>
+      </div>
+      <div class="recipe-section">
+        <h4>Preparación</h4>
+        <ol>
+          <li>Sellar la carne en tiras en sartén caliente con aceite. Reservar.</li>
+          <li>En la misma olla, saltear cebolla picada hasta que esté transparente (5 min).</li>
+          <li>Agregar el ajo y los champiñones laminados. Cocinar 4 minutos.</li>
+          <li>Incorporar el arroz. Tostar 2 minutos, moviendo siempre.</li>
+          <li>Añadir el vino y revolver hasta que se absorba.</li>
+          <li>Agregar el caldo caliente, un cucharón a la vez, sin dejar de revolver. Repetir 18 min aprox.</li>
+          <li>Cuando el arroz esté al dente, incorporar la carne, la mantequilla y el parmesano.</li>
+          <li>Apagar el fuego, tapar 2 minutos. Servir de inmediato.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="recipe-note familia-only">
+      <span class="pin">★ Confesión del chef</span>
+      Las primeras tres veces me quedó pegado al fondo. La cuarta también. Hay que tener fe y revolver.
+    </div>
+    <div class="recipe-note agus-only">
+      <span class="pin">★ Tupper hack</span>
+      El risotto al día siguiente sale mejor como arancini: lo amasas en bolitas, lo pasas por pan rallado, y al horno 15 min a 200 °C. Mejor que el original.
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ── CARTA MODAL ───────────────────────────── -->
+<!-- ════════════════════════════════════════════ -->
+<div class="overlay" id="cartaOverlay" role="dialog" aria-modal="true" aria-labelledby="carta-modal-title" onclick="closeOverlayBg(event, 'cartaOverlay')">
+  <div class="modal">
+    <button class="modal-close" type="button" onclick="closeOverlay('cartaOverlay')" aria-label="Cerrar">✕</button>
+    <div class="modal-stamp dark">Carta · 09.05.2026 · Barcelona</div>
+    <h2 class="modal-title" id="carta-modal-title">Para la jefa de cocina.</h2>
+    <div class="modal-body">
+
+      <p><strong>Mamá,</strong></p>
+
+      <p>Te escribo desde una cocina que no es la de la casa, en una ciudad que todavía me cuesta llamar mía, y de la que sin embargo aprendí más de lo que pensaba que se podía aprender en tan poco tiempo.</p>
+
+      <p>Llegué acá creyéndome un crack para todo. Y la verdad es que las primeras semanas me tocó descubrir, una por una, todas las cosas que hacías tú sin que yo me diera nunca cuenta. Cosas tan básicas como saber usar la lavadora, y que si no la vacías a en un tiempo, la ropa queda con un olor que no sale. Que el pan no aparece solo. Que la pieza limpia es una decisión de todos los días y no un milagro que pasa mientras uno está en otra. Hubo una noche que llegué tarde de clases, abrí el refri y estaba vacío, y lo primero que se me vino a la cabeza fuiste tú. No para llamarte, sino porque entendí que eso que hacías era trabajo de verdad, que pasa piola, pero que toma mucho trabajo. Cada cosa pequeña que extraño tiene tu cara escondida adentro.</p>
+
+      <p>Lo más raro de vivir lejos es que te da perspectiva de cosas que antes no veía, no porque no quisiera, sino porque estabas tan adentro que no había distancia para medirlas. Ahora la tengo. Y cuando miro para atrás veo todo lo que armaron, y todo el esfuerzo que tuvieron que hacer para construir una familia tan linda como la nuestra. No lo valoraba tan seguido porque no sabía que había algo que valorar de esa manera. Acá aprendí que no todos tienen lo que yo tuve.</p>
+
+      <p>Al Cleme también quiero que le llegue esto, aunque sea de rebote: espero que lo entienda sin tener que cruzar ningún océano para darse cuenta y tomarle el valor cada día por que lo merece.</p>
+
+      <p>Este tiempo me ha servido para crecer, sí. Pero más que nada para <strong>valorar</strong>. Para entender que el amor que recibí en nuestra casa no es algo normal: es una excepción, y yo tuve la suerte de nacer dentro de ella.</p>
+
+      <p>Al papá también le debo esto. No es para nada chico el esfuerzo que hicieron, darme la oportunidad de venir a cumplir algo que yo quería desde que tengo memoria, en un lugar que siempre me pareció lejano y un poco imposible. Cuando tuve miedo, que lo tuve, no me dejaron quedarme ahí. Me empujaron. Y eso es fácil decirlo así, pero yo sé lo que costó, la confianza que hay que tener en alguien para mandarlo al otro lado del mundo a que viva solo y aprenda solo y se equivoque solo. Estos meses los han vivido conmigo aunque no estén acá, y eso también lo siento. No sé si alguna vez les voy a poder devolver todo lo que me dieron, pero sí sé que no se me va a olvidar nunca.</p>
+
+      <p>Hoy abrí MUNCH solo para ti. Como en The Bear jajajaj, el chef que abre el restaurante sabe que el plato no sale a la mesa hasta que la persona indicada lo aprueba. Tú eres esa persona. Siempre lo serás mamita.</p>
+
+      <p>Esta idea es para recrear cuando cocinábamos juntos los días de semana, tú mandando, yo ayudando, pero ahora cada uno en su cocina, solo que con un océano entre medio.</p>
+
+      <p>Te amo mucho, <strong>munch</strong>. Feliz día.</p>
+
+    </div>
+    <div class="carta-firma">
+      <div class="from">tu hijo</div>
+      <div class="name">Agus</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const CLAVE = "munch";
+  let lastFocus = null;
+
+  function checkPassword() {
+    const input  = document.getElementById('passwordInput');
+    const errMsg = document.getElementById('errorMsg');
+    const wrap   = document.getElementById('pwForm');
+    const val    = input.value.trim().toLowerCase();
+
+    if (val === CLAVE) {
+      errMsg.classList.remove('visible');
+      wrap.classList.add('success');
+      setTimeout(() => {
+        wrap.classList.remove('success');
+        openOverlay('cartaOverlay');
+      }, 600);
+    } else {
+      input.classList.add('error');
+      errMsg.classList.add('visible');
+      setTimeout(() => input.classList.remove('error'), 450);
+      input.value = '';
+      input.focus();
+    }
+  }
+
+  function openOverlay(id) {
+    lastFocus = document.activeElement;
+    const overlay = document.getElementById(id);
+    overlay.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      const close = overlay.querySelector('.modal-close');
+      if (close) close.focus({ preventScroll: true });
+    }, 100);
+  }
+  function closeOverlay(id) {
+    document.getElementById(id).classList.remove('visible');
+    document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) {
+      try { lastFocus.focus({ preventScroll: true }); } catch(e) {}
+    }
+  }
+  function closeOverlayBg(e, id) {
+    if (e.target === document.getElementById(id)) closeOverlay(id);
+  }
+  // De un overlay a otro (descripción → receta)
+  function switchOverlay(fromId, toId) {
+    const from = document.getElementById(fromId);
+    from.classList.remove('visible');
+    setTimeout(() => openOverlay(toId), 220);
+  }
+
+  function setRecipeMode(btn, mode) {
+    const modal = btn.closest('.modal');
+    if (!modal) return;
+    modal.dataset.mode = mode;
+    modal.querySelectorAll('.recipe-toggle button').forEach(b => {
+      const isActive = b.dataset.mode === mode;
+      b.classList.toggle('active', isActive);
+      b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+    modal.querySelectorAll('.rmode').forEach(el => {
+      const isMatch = el.classList.contains('rmode-' + mode);
+      el.classList.toggle('hidden', !isMatch);
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.overlay.visible').forEach(o => closeOverlay(o.id));
+    }
+  });
+
+  let lastClickTime = 0;
+  document.querySelectorAll('.cat, .dish').forEach(el => {
+    el.addEventListener('click', (e) => {
+      const now = Date.now();
+      if (now - lastClickTime < 350) {
+        e.stopPropagation();
+        e.preventDefault();
+        return;
+      }
+      lastClickTime = now;
+    }, true);
+  });
+</script>
+
+</body>
+</html>
